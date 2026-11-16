@@ -31,6 +31,12 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.14.0</version>
       </plugin>
+      <!-- Pinned so the IDE's embedded Maven resolves the same version as the CLI; the sandbox is offline. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
